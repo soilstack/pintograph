@@ -107,7 +107,7 @@ def draw():
     global points
     global circles
 
-    background(255)
+    #background(255)
     
     if cycle < max_cycles:
 
@@ -132,13 +132,13 @@ def draw():
     else:
         pass
         
-    for cir in circles[:]:
+    for cir in circles[-2:]:
         circle(cir[0], cir[1],3)
-    for pt in points[:]:
+    for pt in points[-1:]:
         point(pt[0], pt[1])        
-        line(P0[0], P0[1], P4[0], P4[1])
-        line(P1[0], P1[1], P3[0], P3[1])
-        line(P3[0], P3[1], P_pen[0][0], P_pen[0][1])
-        line(P4[0], P4[1], P_pen[0][0], P_pen[0][1])
+        #line(P0[0], P0[1], P4[0], P4[1])
+        #line(P1[0], P1[1], P3[0], P3[1])
+        #line(P3[0], P3[1], P_pen[0][0], P_pen[0][1])
+        #line(P4[0], P4[1], P_pen[0][0], P_pen[0][1])
     cycle += 1
     
